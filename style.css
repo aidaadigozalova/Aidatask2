@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .header-bar {
+    background: #FFD93D;
+    height: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .todo-box {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sort-icon {
+    width: 20px;
+    opacity: 0.3;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .task {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s ease;
+  }
+  
+  .task-text {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+  }
+  
+  .delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .delete-btn img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+ 
+  .delete-btn:hover {
+    background-color: #a259ff;
+  }
+  
+ 
+  .add-btn {
+    background: linear-gradient(90deg, #a259ff, #6c00ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  .plus {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .dragging {
+    opacity: 0.5;
+  }
+  
